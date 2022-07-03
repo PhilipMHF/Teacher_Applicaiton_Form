@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peterson EFL Institute</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="header title">Welcome to Peterson EFL Institute</h1>
+      <p class="header description">
+        Here you can submit your information regarding the available positions
+        at Peterson Institute
+      </p>
+    </header>
+    <main>
+      <form
+        action="https://wpforms.com/wp-content/uploads/2017/05/website-form-confirmation.png"
+      >
+        <fieldset>
+          <label
+            >Given Name:
+            <input
+              type="text"
+              name="userGivName"
+              pattern="[A-Za-z]+"
+              title="Please only use uppercase and lowercase letters"
+              required
+          /></label>
+          <label
+            >Surname:
+            <input
+              type="text"
+              name="userSurname"
+              pattern="[A-Za-z]+"
+              title="Please only use uppercase and lowercase letters"
+              required
+          /></label>
+          <label
+            >Please enter your Email address:
+            <input
+              type="email"
+              name="userEmail"
+              placeholder="For instance: JohnSmith@example.com"
+              title="Please note that an Email address doesn't begin with WWW"
+              required
+          /></label>
+          <label
+            >When were you born?
+            <input
+              type="text"
+              placeholder="Please use the mm/dd/yyyy format"
+              name="userBirth"
+              onfocus="(this.type='date')"
+              title="Please enter your birthday using the specified format"
+              required
+          /></label>
+          <label
+            >Which position are you applying for?
+            <select
+              required
+              title="You must choose which position you want to apply for"
+            >
+              <option value="" disabled selected hidden>
+                Please select one option from the menu
+              </option>
+              <option value="teacher">Teacher</option>
+              <option value="TA">Teacher Assistant</option>
+              <option value="intern">Intern</option>
+            </select>
+          </label>
+          <label
+            >How many years of experience do you have?
+            <input
+              type="text"
+              name="userXP"
+              pattern="[0-9]{1,2}"
+              title="Please only use numbers"
+              required
+          /></label>
+          <hr />
+          <div class="empsit">
+            <p>Are you employed at the moment?</p>
+            <div id="empsit-options">
+              <label
+                ><input type="radio" name="empStat" value="yes" required /> Yes,
+                I am employed.</label
+              >
+              <label
+                ><input type="radio" name="empStat" value="no" required /> No, I
+                am not employed.</label
+              >
+            </div>
+          </div>
+          <hr />
+          <div class="DegCert">
+            <p>Which of the following degrees/certifications do you have?</p>
+            <div class="certification">
+              <label
+                ><input type="checkbox" name="toefl/ielts" value="yes" />
+                TOEFL/IELTS</label
+              >
+              <label
+                ><input type="checkbox" name="celta" value="yes" /> CELTA</label
+              >
+              <label
+                ><input type="checkbox" name="delta" value="yes" /> DELTA</label
+              >
+              <label
+                ><input type="checkbox" name="tefl" value="yes" /> TEFL</label
+              >
+              <label
+                ><input type="checkbox" name="tesl" value="yes" /> TESL</label
+              >
+              <label
+                ><input type="checkbox" name="tesol" value="yes" /> TESOL</label
+              >
+            </div>
+            <div id="degrees">
+              <label class="degree"
+                ><input type="checkbox" name="b_edu" value="yes" /> Bachelor's
+                or higher in education</label
+              >
+              <label class="degree"
+                ><input type="checkbox" name="b_n_edu" value="yes" /> Bachelor's
+                or higher in a major other than education</label
+              >
+            </div>
+            <hr />
+            <label class="otherCert"
+              ><p>Is there anything else you'd like to add?</p>
+              <textarea
+                name="others"
+                rows="3"
+                placeholder="Please specify..."
+              ></textarea>
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit">Submit Application</button>
+      </form>
+    </main>
+    <footer>
+      <div class="footer">
+        <h2>About Me</h2>
+        <p>
+          I'm an English teacher trying to slowly but surely work my way toward
+          becoming a developer. I express my deepest gratitude toward
+          <a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a>
+          for providing invaluable and free lessions for beginners such as
+          myself.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
